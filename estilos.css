@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    background:black;
+    margin: 0;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+header label:hover{
+    background: rgba(0, 0, 0, 0.3)
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+   
+}
+
+.menu li{
+    flex-grow: 1;
+    text-align: center;
+    
+}
+
+.menu li:hover{
+    background: rgba(0, 0, 0, 0.3)
+}
+
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width:768px){
+    header label{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background: #4e94ab;
+        width: 70%;
+        margin-left:-70%;
+        transition: all 0.5s;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        boder-top:1px solid #fff;
+    }
+
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+}
+
+.fondo{
+    margin: 0;
+    padding: 0;
+    background-image: url(img/concierto.jpg);
+    height: 500px; /* Aqui le especificamos el alto de la imagen */
+    background-position: center; /* Aqui para centrar la imagen */
+    background-repeat: no-repeat; /* Y esto se utiliza para no que la imagen no ser repeta */
+    background-size: cover;/* Se rescala la imagen de fondo para cubrir todo el contenedor */
+    color: #fff;
+    text-align: center;
+}
+
+h1{
+    padding-top:250px; 
+}
+
+
+.articulos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0;
+    justify-content: center;
+    align-content: center;
+    padding:3em  0 0 0;
+    
+}
+
+i{
+    border: 2px solid whitesmoke;
+    border-radius:100%;
+    color: rgb(255, 255,255);
+    display: block;
+    height: 2.1em;
+    width: 2.8em;
+    white-space: nowrap;
+    padding-top: 1em;
+    margin: 0 auto 2em auto; 
+}
+
+#cajas {
+    width:450px;/*350*/
+    height:500px;
+    border-radius:0.25em;
+    margin-left: 20px;
+
+  
+}
+
+img{
+    width: 100%;
+    height:50%;
+}
+
+#btn1{
+    width: 290px;
+    height: 40px;
+    margin:15px 25px 10px 75px;
+    text-align: center;
+    border-radius: 0.5em;
+    border-bottom-color: aqua;
+    color:white;
+    background-color: #82cec6;
+    border:none;
+}
+
+#btn6{
+    width: 290px;
+    height: 40px;
+    margin:2px 25px 15px 75px;
+    text-align: center;
+    border-radius: 0.5em;
+    border-bottom-color: aqua;
+    color:white;
+    background-color: #82cec6;
+    border: none;
+}
+
+#btn2{
+    width: 290px;
+    height: 40px;
+    margin:15px 25px 10px 75px;
+    text-align: center;
+    border-radius: 0.5em;
+    border-bottom-color: #9d7ed0;
+    color:white;
+    background-color: #9d7ed0;
+    border:none;
+}
+
+#btn4{
+    width: 290px;
+    height: 40px;
+    margin:15px 25px 10px 75px;
+    text-align: center;
+    border-radius: 0.5em;
+    border-bottom-color: #9d7ed0;
+    color:white;
+    background-color: #9d7ed0;
+    border:none;
+}
+
+#btn3{
+    width: 290px;
+    height: 40px;
+    margin:15px 25px 10px 75px;
+    text-align: center;
+    border-radius: 0.5em;
+    border-bottom-color: #70c7be;
+    color:white;
+    background-color: #7f92cf;
+    border:none;
+}
+
+#btn5{
+    width: 290px;
+    height: 40px;
+    margin:15px 25px 10px 75px;
+    text-align: center;
+    border-radius: 0.5em;
+    border-bottom-color: #70c7be;
+    color:white;
+    background-color: #7f92cf;
+    border:none;
+}
