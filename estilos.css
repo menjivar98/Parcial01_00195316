@@ -1,3 +1,12 @@
+:root{
+    --color1: orange;
+    --color2: brown;
+    --color3: black;
+}
+
+
+
+
 body{
     margin: 0;
     font-family: sans-serif;
@@ -5,8 +14,10 @@ body{
 
 header{
     width: 100%;
-    background:black;
+    background:var(--color3);
     margin: 0;
+    padding: 0;
+   
 }
 
 #btn-menu{
@@ -40,7 +51,7 @@ header label:hover{
 }
 
 .menu li:hover{
-    background: rgba(0, 0, 0, 0.3)
+    background: rgba(0, 0, 0, 0.5)
 }
 
 
@@ -57,11 +68,11 @@ header label:hover{
     }
 
     .menu{
-        position: absolute;
-        background: #4e94ab;
-        width: 70%;
-        margin-left:-70%;
-        transition: all 0.5s;
+        padding: 0;
+        margin: 0;
+        background:var(--color3);
+       
+        
     }
 
     .menu ul{
@@ -72,9 +83,20 @@ header label:hover{
         boder-top:1px solid #fff;
     }
 
-    #btn-menu:checked ~ .menu{
-        margin: 0;
+    .articulos{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
     }
+
+
+.logo{
+    display: none;
+    height: 60px;
+    width: 56px;
+
+}
+
+    
 }
 
 .fondo{
@@ -90,7 +112,8 @@ header label:hover{
 }
 
 h1{
-    padding-top:250px; 
+    padding-top:250px;
+    margin-top: 0; 
 }
 
 
@@ -98,9 +121,7 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 0;
-    justify-content: center;
-    align-content: center;
+    
     padding:3em  0 0 0;
     
 }
@@ -139,7 +160,7 @@ img{
     border-radius: 0.5em;
     border-bottom-color: aqua;
     color:white;
-    background-color: #82cec6;
+    background-color:var(--color1);
     border:none;
 }
 
@@ -151,7 +172,7 @@ img{
     border-radius: 0.5em;
     border-bottom-color: aqua;
     color:white;
-    background-color: #82cec6;
+    background-color:var(--color1);
     border: none;
 }
 
@@ -163,7 +184,7 @@ img{
     border-radius: 0.5em;
     border-bottom-color: #9d7ed0;
     color:white;
-    background-color: #9d7ed0;
+    background-color: var(--color1);
     border:none;
 }
 
@@ -175,7 +196,7 @@ img{
     border-radius: 0.5em;
     border-bottom-color: #9d7ed0;
     color:white;
-    background-color: #9d7ed0;
+    background-color:var(--color1);
     border:none;
 }
 
@@ -187,7 +208,7 @@ img{
     border-radius: 0.5em;
     border-bottom-color: #70c7be;
     color:white;
-    background-color: #7f92cf;
+    background-color: var(--color1);
     border:none;
 }
 
@@ -199,6 +220,24 @@ img{
     border-radius: 0.5em;
     border-bottom-color: #70c7be;
     color:white;
-    background-color: #7f92cf;
+    background-color:var(--color1);
     border:none;
+}
+
+footer{
+    background-image: url(img/contacus.jpg);
+    background-position: center; /* Aqui para centrar la imagen */
+    background-repeat: no-repeat; /* Y esto se utiliza para no que la imagen no ser repeta */
+    background-size: cover;
+}
+
+h3{
+    color:var(--color2);
+}
+
+.logo{
+    display: cover;
+    height: 56px;
+    width: 56px;
+
 }
